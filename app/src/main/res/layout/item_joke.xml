@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_joke_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="5dp"
+    app:contentPadding="5dp">
+
+    <TextView
+        android:id="@+id/item_text_joke_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textColor="@color/color_202122"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/item_pic_joke_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.xin.xiaoxinzone.Widget.XinCustomImageView
+            android:scaleType="fitXY"
+            android:id="@+id/item_pic_joke_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/item_pic_joke_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/color_202122"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

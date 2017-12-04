@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xin.xiaoxinzone.UI.Main.Main.Activity.MainActivity">
+
+
+    <include layout="@layout/layout_actionbar"/>
+
+    <FrameLayout
+        android:id="@+id/home_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_3e000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:id="@+id/home_head_news"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/home_head_news_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/blue_head_news"/>
+
+                <TextView
+                    android:id="@+id/home_head_news_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="头条"
+                    android:textColor="@color/color_1c84d1"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/home_joke"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_joke_img"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@mipmap/gray_discovery"/>
+
+            <TextView
+                android:id="@+id/home_joke_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="段子"
+                android:textColor="@color/color_202122"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_me_img"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@mipmap/gray_me"/>
+
+            <TextView
+                android:id="@+id/home_me_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@color/color_202122"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
